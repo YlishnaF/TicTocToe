@@ -79,7 +79,15 @@ public class BattleMap extends JPanel {
             }
 
         }
-        
+        if(Logic.gameFinished){
+            g.setColor(new Color(0, 0, 0));
+            g.drawRect(119, 199, 251, 51);
+            g.setColor(new Color(120, 119, 117));
+            g.fillRect(120, 200, 250, 50);
+            g.setColor(Color.black);
+            g.drawString(Logic.s , 224, 230);
+
+        }
 
     }
 
